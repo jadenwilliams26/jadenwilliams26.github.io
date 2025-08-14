@@ -1,102 +1,138 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Jaden Williams - CS ePortfolio</title>
-  <link rel="stylesheet" href="style.css"/>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jaden Williams - Computer Science ePortfolio</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Montserrat:wght@600&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+            background-color: #f8f9fa;
+            color: #333;
+        }
+        header {
+            background-color: #00509e;
+            color: white;
+            padding: 20px 0;
+            text-align: center;
+        }
+        header h1 {
+            font-family: 'Montserrat', sans-serif;
+            margin: 0;
+        }
+        main {
+            max-width: 900px;
+            margin: auto;
+            padding: 20px;
+        }
+        section {
+            background: white;
+            margin-bottom: 20px;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+        h2 {
+            font-family: 'Montserrat', sans-serif;
+            color: #00509e;
+        }
+        a.download-link {
+            display: inline-block;
+            margin-top: 10px;
+            padding: 8px 14px;
+            background-color: #00509e;
+            color: white;
+            border-radius: 5px;
+            text-decoration: none;
+        }
+        a.download-link:hover {
+            background-color: #003f7d;
+        }
+    </style>
 </head>
 <body>
-  <header>
-    <h1>Jaden Williams</h1>
-    <p>Computer Science ePortfolio</p>
-  </header>
+    <header>
+        <h1>Jaden Williams - Computer Science ePortfolio</h1>
+        <p>Showcasing Software Development, Algorithms & Data Structures, and Database Skills</p>
+    </header>
+    <main>
+        <section>
+            <h2>Professional Self-Assessment</h2>
+            <p>
+                Throughout my Computer Science program, I have built a wide range of technical and professional skills that directly prepare me to excel in the software development field. Developing my ePortfolio has given me an opportunity to showcase these strengths and demonstrate my ability to design, implement, and enhance complete software solutions. From software engineering principles to data structures, algorithms, and database integration, this portfolio illustrates not just my technical abilities, but also my growth as a problem-solver and collaborator.
+            </p>
+            <p>
+                My coursework has shaped my professional goals by emphasizing the importance of building robust, maintainable, and secure software. For example, my capstone project integrates hardware control, algorithmic decision-making, and database retrieval in a single cohesive system—a reflection of my ability to combine multiple areas of computer science into practical solutions. This process has also solidified my professional values: writing clean and efficient code, communicating effectively with stakeholders, and approaching each challenge with an analytical and detail-oriented mindset.
+            </p>
+            <p>
+                Collaboration has been a core part of my learning experience, both in team-based assignments and in working with stakeholders to define requirements. I have honed my ability to adapt technical communication to different audiences, ensuring that project goals are understood and met. My work with data structures and algorithms—such as implementing real-time setpoint adjustments via GPIO and decision logic for climate control—shows my ability to apply core computer science concepts to real-world applications. My software engineering and database skills are demonstrated in designing modular code and integrating MongoDB for species-specific configuration retrieval. I also place a strong emphasis on security, following best practices for safe data handling and system reliability.
+            </p>
+            <p>
+                The artifacts in this portfolio—spanning software engineering, algorithms and data structures, and databases—form a complete demonstration of my abilities. Together, they represent my readiness to contribute to complex development projects and my commitment to continuous learning and professional excellence.
+            </p>
+        </section>
 
-  <main>
-    <!-- Professional Self-Assessment -->
-    <section>
-      <h2>Professional Self-Assessment</h2>
-      <p>Professional Self-Assessment
+        <section>
+            <h2>Combined Narrative</h2>
+            <p>
+                This ePortfolio contains an enhanced artifact that evolved across three distinct competency areas: Software Design and Engineering, Algorithms and Data Structures, and Databases. The artifact is a Python-based thermostat system originally developed for CS350, which I expanded to include environmental controls for a reptile breeding application. It integrates sensor readings, GPIO control, setpoint management, and MongoDB-based configuration retrieval.
+            </p>
+            <p>
+                In the Software Design and Engineering phase, I focused on modularity, creating distinct classes such as <code>DisplayManager</code>, <code>Controller</code>, and <code>Thermostat</code>. This improved maintainability and readability, showcasing my skills in designing structured, reusable code. In the Algorithms and Data Structures phase, I implemented GPIO button inputs for adjusting temperature and humidity setpoints in real-time, along with LED status indicators for alert conditions. This demonstrated my ability to apply control flow, state management, and data manipulation techniques in a hardware-interfaced environment. Finally, in the Database phase, I integrated a local MongoDB database to automatically retrieve species-specific setpoints upon selection, reflecting my ability to work with persistent storage and dynamic system configuration.
+            </p>
+            <p>
+                Through these enhancements, I met my planned course outcomes, including applying software design principles, implementing algorithmic solutions, and integrating database functionality into a working system. Each phase deepened my understanding of the relevant concepts: object-oriented design in phase one, event-driven programming in phase two, and database querying in phase three.
+            </p>
+            <p>
+                The process required balancing hardware constraints with software flexibility. I learned to account for input debounce, GPIO timing, and real-time feedback, while also ensuring database integration did not interrupt control loop performance. The main challenge was ensuring seamless communication between hardware, algorithms, and database logic without introducing latency or instability. Overcoming these issues strengthened my problem-solving skills and reinforced the value of modular, testable code.
+            </p>
+        </section>
 
-Completing the Computer Science program and developing my ePortfolio has been both a personal milestone and a professional transformation. Over the course of my studies, I have not only deepened my technical expertise but also learned how to present my abilities in a way that clearly demonstrates my readiness for the computer science field. This portfolio is the culmination of years of structured learning, hands-on problem-solving, and iterative project development, each artifact reflecting both my growth and my adaptability.
+        <section>
+            <h2>Category One: Software Design and Engineering</h2>
+            <p>
+                The artifact is a Python-based environmental control system designed for a reptile breeder, originally created in CS350 and enhanced for this project. It uses modular class-based design to manage hardware components, including a DHT22 sensor, heater, misting device, LEDs, and buttons. The initial enhancements focused on creating a maintainable and scalable structure, implementing clear separation of concerns, and preparing the code for future integration of additional features.
+            </p>
+            <p>
+                I selected this artifact because it demonstrates my ability to structure complex software systems for both clarity and expansion. The implementation of <code>DisplayManager</code>, <code>Controller</code>, and <code>Thermostat</code> classes reflects my understanding of software engineering best practices. By separating display logic, hardware control, and business logic, I ensured that each component could be tested and maintained independently. The improvements included adding comments, refactoring repetitive code, and ensuring readiness for further enhancements.
+            </p>
+            <p>
+                These enhancements met my planned outcomes for Module One by showing my ability to apply object-oriented design principles to a hardware-software integrated system. I learned the value of designing with future integration in mind, which reduced the complexity of later adding algorithmic and database features. The challenge was mapping out a clean architecture while still maintaining compatibility with the original CS350 functionality.
+            </p>
+            <a class="download-link" href="CS499 Milestone Two JW.docx" download>Download Category One Narrative (.docx)</a>
+        </section>
 
-Showcasing Strengths and Shaping Goals
+        <section>
+            <h2>Category Two: Algorithms and Data Structures</h2>
+            <p>
+                In the second enhancement phase, I expanded the artifact by implementing real-time setpoint adjustment using physical buttons connected via GPIO. The <code>BUTTON_MODE</code>, <code>BUTTON_UP</code>, and <code>BUTTON_DOWN</code> pins allow the user to cycle between temperature and humidity adjustment modes and increment or decrement the setpoints. I also incorporated <code>RED_LED</code> and <code>BLUE_LED</code> indicators to signal alert conditions, such as when readings deviate from desired ranges.
+            </p>
+            <p>
+                This enhancement was chosen because it illustrates my ability to apply algorithms and data structures to hardware-interfaced applications. I implemented efficient control loops that handle input debouncing, state tracking, and conditional logic for alerts. The system’s ability to update setpoints in-memory without interrupting the control process demonstrates strong event-driven programming skills.
+            </p>
+            <p>
+                I met my Module One course outcomes by showcasing my capability to design algorithms that interact with hardware in real-time while maintaining reliability. I learned to manage state efficiently and ensure responsiveness, even under the constraints of GPIO input timing. The primary challenge was ensuring smooth transitions between modes and avoiding false inputs due to button bounce, which I resolved through software debouncing techniques.
+            </p>
+            <a class="download-link" href="CS499 Milestone Three JW.docx" download>Download Category Two Narrative (.docx)</a>
+        </section>
 
-Throughout my coursework, I learned to approach problems as opportunities for innovation rather than obstacles. Every project, whether an academic assignment or a personal undertaking, strengthened my ability to think critically, design systematically, and implement robust solutions. The process of curating and enhancing artifacts for my ePortfolio sharpened my skills in modular software design, algorithm optimization, database management, and secure coding practices.
-
-My professional goals are rooted in developing solutions that are both technically sound and user-focused. This means ensuring that my software is maintainable, scalable, and resilient while remaining approachable for end users. This philosophy is reflected throughout the artifacts I have chosen — each enhancement demonstrates a deliberate step toward aligning functionality with usability.
-
-Collaboration and Communication
-
-My program experience taught me that collaboration is not simply dividing tasks but aligning perspectives to solve complex problems. I have contributed to and led team projects where success depended on maintaining clear communication, documenting processes, and adapting to evolving requirements. Working with both technical peers and non-technical stakeholders taught me how to translate complex technical concepts into accessible language, ensuring everyone involved understands the scope, progress, and trade-offs of a project.
-
-Technical Expertise
-
-Data Structures and Algorithms: I have applied these fundamentals in designing efficient, reliable solutions for real-time systems. For example, I implemented menu navigation and alert systems in hardware projects using optimized state management and decision logic.
-
-Software Engineering: My development process incorporates modularity, clean architecture, and thorough documentation. I have implemented full object-oriented designs in both academic and personal projects to ensure scalability and maintainability.
-
-Databases: I have integrated both SQL and NoSQL solutions, such as MongoDB, into applications, ensuring that data is efficiently structured and retrieved to meet specific use cases.
-
-Security: I understand the importance of secure coding practices, including input validation, sanitization, and secure data handling. I applied these principles when building applications that interact with hardware and databases.
-
-Portfolio Cohesion
-
-The artifacts in this ePortfolio fit together to tell a complete story of my capabilities: from foundational software design to advanced algorithmic thinking and finally to database integration. The featured thermostat project, enhanced across three categories, exemplifies my ability to plan, build, and evolve a solution through multiple layers of technical improvement. Together, these artifacts present not just isolated skills but an integrated skill set — one that can adapt to different challenges and technologies in the field.
-
-This ePortfolio is not simply a record of past work; it is a representation of my readiness to contribute meaningfully to the computer science profession. The skills demonstrated here — technical, collaborative, and communicative — form the foundation of my professional identity and will continue to evolve as I advance in my career.</p>
-    </section>
-
-    <!-- Combined Narrative -->
-    <section>
-      <h2>Combined Narrative</h2>
-      <p>Briefly describe the artifact.
-The artifact is a Python-based thermostat system designed for a reptile enclosure. It was originally developed in early 2025 as a functional temperature and humidity controller using a Raspberry Pi, DHT22 sensor, heater, and misting system. Over the course of this project, the system was significantly enhanced in three stages: software design and engineering improvements (Category One), advanced algorithm and data structure integration (Category Two), and MongoDB database integration for dynamic setpoint retrieval (Category Three).
-
-Justify the inclusion of the artifact in your ePortfolio.
-This project was selected for my ePortfolio because it demonstrates my ability to design, improve, and extend a real-world IoT solution through multiple layers of development. It showcases my skills in structured software design, hardware integration, GPIO-based input handling, algorithmic problem-solving, and database-driven customization. Across the three enhancement stages, I applied best practices in class-based architecture, efficient data handling, and database interaction — all while managing hardware components. The artifact’s progression clearly reflects growth in both coding quality and system functionality, making it an excellent representation of my software development capabilities.
-
-How was the artifact improved?
-
-Category One: Software Design and Engineering — Refactored the code into a modular, class-based architecture with Thermostat, Controller, and DisplayManager classes. Added structured error handling, improved commenting, and clearer separation of responsibilities for maintainability and scalability.
-
-Category Two: Algorithms and Data Structures — Introduced GPIO-based menu navigation using physical buttons for adjusting temperature and humidity setpoints. Implemented algorithmic logic for LED-based environmental alerts, improving real-time responsiveness to sensor readings.
-
-Category Three: Databases — Integrated a local MongoDB database to store species-specific temperature and humidity requirements. The system now automatically pulls correct setpoints when a species is selected, eliminating the need for manual reconfiguration and making the system more adaptable to various reptile species.
-
-Did you meet the course outcomes you planned to meet with this enhancement in Module One?
-Yes. The enhancements addressed planned course outcomes, including designing and evaluating computing solutions, demonstrating innovative techniques and tools, and creating software that meets specific industry needs. The database integration also aligned with outcomes related to managing data effectively and ensuring solutions are adaptable to future requirements.
-
-Reflect on the process of enhancing and modifying the artifact.
-Enhancing this artifact taught me the importance of planning for modularity early in development. While adding new features, I learned how clear class responsibilities and well-documented code help streamline the integration of new functionalities — especially when hardware components are involved. The GPIO-based input system required careful algorithmic planning to prevent misreads and ensure user-friendliness. Integrating MongoDB added another layer of complexity, as I had to design data structures that were intuitive, scalable, and reliable for retrieving species-specific settings.
-
-The biggest challenges were ensuring smooth hardware/software interaction, particularly when switching between modes and updating setpoints in real time, and maintaining clean communication between the database and the thermostat logic. Overcoming these obstacles strengthened my ability to design full-stack IoT systems and deepened my understanding of how to merge software engineering principles with physical device control.</p>
-    </section>
-
-    <!-- Category One -->
-    <section>
-      <h2>Category One: Software Design and Engineering</h2>
-      <p>[Full Category One narrative text here]</p>
-      <p><a href="assets/CS499%20Milestone%20Two%20JW.docx" download>Download Category One Narrative (.docx)</a></p>
-    </section>
-
-    <!-- Category Two -->
-    <section>
-      <h2>Category Two: Algorithms and Data Structures</h2>
-      <p>[Full Category Two narrative text here]</p>
-      <p><a href="assets/CS499%20Milestone%20Three%20JW.docx" download>Download Category Two Narrative (.docx)</a></p>
-    </section>
-
-    <!-- Category Three -->
-    <section>
-      <h2>Category Three: Databases</h2>
-      <p>[Full Category Three narrative text here]</p>
-      <p><a href="assets/CS499%20Milestone%20Four%20JW.docx" download>Download Category Three Narrative (.docx)</a></p>
-    </section>
-  </main>
-
-  <footer>
-    <p>&copy; 2025 Jaden Williams</p>
-  </footer>
+        <section>
+            <h2>Category Three: Databases</h2>
+            <p>
+                In the final enhancement, I integrated a local MongoDB database to store and retrieve species-specific temperature and humidity setpoints. When a species is selected in the system, the thermostat automatically queries the database and applies the retrieved setpoints without requiring manual configuration.
+            </p>
+            <p>
+                This enhancement highlights my database integration skills, including connecting to MongoDB, executing queries, and incorporating retrieved data into the system’s operational logic. It showcases my ability to combine persistent data storage with hardware control, allowing the system to adapt dynamically to different operational requirements.
+            </p>
+            <p>
+                The enhancement fulfilled my planned course outcomes by demonstrating proficiency in database management and its application within a larger software-hardware system. I learned how to optimize database queries to minimize latency and ensure seamless integration with real-time control processes. The main challenge was ensuring that the database access did not interrupt the timing-sensitive GPIO control loop, which I solved by loading setpoints before initiating the main control cycle.
+            </p>
+            <a class="download-link" href="CS499 Milestone Four JW.docx" download>Download Category Three Narrative (.docx)</a>
+        </section>
+    </main>
 </body>
 </html>
